@@ -1,0 +1,9 @@
+My idea so far is to create a browsing tool which allows people to analyze and interrogate the DNA of certain organisms, probably viruses or bacteria of some sort, from NCBI.
+
+The user will be shown an HTML page, and they will be able to select which organisms to see data from using a series of radio buttons, with the option to view data from all organisms. Then, they can choose to search using either the names or the descriptions of genes. After this, they can choose to search using specific names or specific words in the descriptions of the genes.
+
+All of these choices will be used to construct a SQL query made using a CGI file which uses mysql.connector to connect to a MySQL library which already has the data from NCBI. The data will use the biological data schema Chado in order to effectively store and query this data using MySQL queries. The resulting table would then be passed back to the client side as a JSON dump in order to create a table which can then be displayed to the user.
+
+I think that, once all of the data is obtained, it would make sense for the user to be able to see a lot of information, but to also be able to filter specific columns that they want to focus on. Therefore, I also plan to allow them to only see specific columns. I think it makes sense for this to operate using JQuery on the client side since I think it will be quicker to make a single SQL query on the server side which creates a large table that is then modified on the client side. If the genes are changed, then I will make another SQL query to create another table.
+
+I don't think the structure of this will be that different from the projects which we've already done. I would have css and js folders with the CSS and JQuery files respectively. Then in the main folder, I would have a CGI file which creates a JSON file for JQuery and an HTML file which would provide the basic format for the page. 
