@@ -20,6 +20,9 @@ Important Coronaviruses:
     Middle East respiratory syndrome-related coronavirus (MERS-CoV), β-CoV (identified in 2012)
     Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), β-CoV (identified in 2019)
 
+BioAlign explanation:
+    https://biopython.org/docs/1.75/api/Bio.Align.html
+
 This project is from Ramanuj Sarkar for Spring 2025 at JHU for AS.410.712.
 
 This browsing tool allows people to analyze and interrogate the DNA of different coronaviruses, such as the common cold virus and CoViD-19.
