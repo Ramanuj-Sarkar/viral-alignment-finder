@@ -10,6 +10,16 @@ Compares viral genomes.
 # Detailed Usage
 
 <!--
+
+Important Coronaviruses:
+    Human coronavirus OC43 (HCoV-OC43), β-CoV
+    Human coronavirus HKU1 (HCoV-HKU1), β-CoV
+    Human coronavirus 229E (HCoV-229E), α-CoV
+    Human coronavirus NL63 (HCoV-NL63), α-CoV–
+    Severe acute respiratory syndrome coronavirus (SARS-CoV), β-CoV (identified in 2003)
+    Middle East respiratory syndrome-related coronavirus (MERS-CoV), β-CoV (identified in 2012)
+    Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), β-CoV (identified in 2019)
+
 This project is from Ramanuj Sarkar for Spring 2025 at JHU for AS.410.712.
 
 This browsing tool allows people to analyze and interrogate the DNA of different coronaviruses, such as the common cold virus and CoViD-19.
@@ -20,4 +30,6 @@ All of these choices are to construct a SQL query made using a CGI file which us
 
 The user is able to focus on only specific columns.
 -->
+
+
 
