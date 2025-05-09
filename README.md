@@ -10,6 +10,8 @@ Compares viral genomes.
 # Detailed Usage
 
 <!--
+Rhinovirus Link: https://www.ncbi.nlm.nih.gov/nuccore/NC_001490.1
+
 
 Important Coronaviruses:
     Human coronavirus OC43 (HCoV-OC43), β-CoV
