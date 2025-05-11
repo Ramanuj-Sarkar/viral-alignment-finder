@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Ramanuj Sarkar Final Project</title>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" type="text/css" href="css/project.css" />
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/project.js"></script>
+
+</head>
+
+<body>
+
+<h1>Human Coronavirus Alignment Finder</h1>
+
+<form name="alignment_data" id="alignment_data" action="">
+
+	<h2>First Product</h2>
+	<input type="radio" id="sequence0" name="first_radio" value="sequence0">
+	<label for="sequence0">Human coronavirus OC43</label><br>
+	<input type="radio" id="sequence1" name="first_radio" value="sequence1">
+	<label for="sequence1">Human coronavirus HKU1</label><br>
+	<input type="radio" id="sequence2" name="first_radio" value="sequence2">
+	<label for="sequence2">Human coronavirus 229E</label><br>
+	<input type="radio" id="sequence3" name="first_radio" value="sequence3">
+	<label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label><br>
+	<input type="radio" id="sequence4" name="first_radio" value="sequence4">
+	<label for="sequence4">Human betacoronavirus 2c</label><br>
+	<input type="radio" id="sequence5" name="first_radio" value="sequence5">
+	<label for="sequence5">Human enteric coronavirus 4408</label><br>
+	<input type="radio" id="sequence6" name="first_radio" value="sequence6">
+	<label for="sequence6">Sarbecovirus RhGB01</label><br><br>
+	
+	<input name="first_product" id="first_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
+        <label for="first_product">First Product</label><br>
+
+	<h2>Second Product</h2>
+        <input type="radio" id="sequence0" name="second_radio" value="sequence0">
+        <label for="sequence0">Human coronavirus OC43</label><br>
+        <input type="radio" id="sequence1" name="second_radio" value="sequence1">
+        <label for="sequence1">Human coronavirus HKU1</label><br>
+        <input type="radio" id="sequence2" name="second_radio" value="sequence2">
+        <label for="sequence2">Human coronavirus 229E</label><br>
+        <input type="radio" id="sequence3" name="second_radio" value="sequence3">
+        <label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label><br>
+        <input type="radio" id="sequence4" name="second_radio" value="sequence4">
+        <label for="sequence4">Human betacoronavirus 2c</label><br>
+        <input type="radio" id="sequence5" name="second_radio" value="sequence5">
+        <label for="sequence5">Human enteric coronavirus 4408</label><br>
+        <input type="radio" id="sequence6" name="second_radio" value="sequence6">
+	<label for="sequence6">Sarbecovirus RhGB01</label><br><br>
+
+        <input name="second_product" id="second_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
+        <label for="second_product">Second Product</label><br>
+</form>
+
+<input name="submit_alignment" type="submit" id="submit_alignment" value="submit">
+
+<section id="alignment_results">
+	<p>The number of alignments found was: <span id="alignment_count"> <!-- will be filled in by javascript --> </span></p>
+	<p>The alignment score was: <span id="alignment_score"></span></p>
+	<p>The matches, mismatches, and empty space in the top alignment sum up to: <span id="alignment"></span></p>
+</section>
+
+</body>
