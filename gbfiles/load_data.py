@@ -5,7 +5,9 @@ from Bio import SeqIO
 # deletes old tables
 # creates new tables
 def starting():
-    start_thing = '''USE rsarkar6;
+    start_thing = '''CREATE DATABASE IF NOT EXISTS rsarkar6;
+
+USE rsarkar6;
 
 DROP TABLE IF EXISTS source;
 DROP TABLE IF EXISTS gene;
