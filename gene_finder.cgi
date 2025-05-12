@@ -26,16 +26,19 @@ def main():
     # names in use
     which_list = []
     
+    # the maximum number of files
+    file_number = 99
+
     # organism list
-    # the "100" allows for 0 columns to be selected
-    id_list = ['100']
+    # the "file_number + 1" allows for 0 columns to be selected
+    id_list = [f'{file_number+1}']
 
     # sets up json file
     results = {'columns': col_dict, 'match_count': 0, 'matches': which_list, 'misc': {'cols': col_int} }
 
     # makes sure all sequences are included
     # from html
-    for x in range(10):
+    for x in range(file_number):
         if form.getvalue(f'sequence{x}'):
             id_list.append(f'{x}')
 
