@@ -62,7 +62,7 @@ def bio_genebank(rec, idnum):
 def main():
     starting_statement = starting()
     
-    check_exception = '';
+    correct_exception = False;
 
     insertion_list = []
     try:
@@ -75,15 +75,19 @@ def main():
             insertion_list += bio_genebank(record, number_checker)
 
             number_checker += 1
-    except Exception as e:
-        check_exception += "This breaks the loop, basically."
-    
+    except FileNotFoundError as e:
+        print(e, ". This is the intended error.", sep='')
+        correct_exception = True
+
     # saves data in sql_data.txt
-    with open('sql_data.txt', 'w+') as sqldata:
-        sqldata.write(starting_statement)
-        for statement in insertion_list:
-            sqldata.write(statement + '\n')
+    if correct_exception:
+        with open('sql_data.txt', 'w+') as sqldata:
+            sqldata.write(starting_statement)
+            for statement in insertion_list:
+                sqldata.write(statement + '\n')
+            sqldata.write('\n')
 
 
 if __name__ == '__main__':
     main()
+
