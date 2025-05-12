@@ -43,3 +43,4 @@ final
 * "alignment_finder.html" - finds alignment, as stated above
 * "gene_finder.cgi" - creates JSON for "gene_finder.html"
 * "gene_finder.html" - creates table, as stated above
+* "final_narrative.pdf" - final project narrative
