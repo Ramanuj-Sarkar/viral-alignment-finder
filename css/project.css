@@ -2,12 +2,18 @@ body {
     font: small 'Lucida Grande', Verdana, Arial, sans-serif;
 }
 
+/* I basically used <p> and <div> to display things as blocks
+ * so I just made it explicit. */
 p {
 	font-size:95%;
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 div {
 	font-size: 95%;
+	display: block;
 }
 
 h1 {
@@ -20,7 +26,8 @@ h2 {
     font-weight: bold;
 }
 
-/* the results section should be initially invisible */
+/* I made the results sections invisible
+ * like in the class project. */
 section#results {
     display: none;
 }
@@ -37,12 +44,6 @@ table {
 table thead td {
     font-weight: bold;
 }
-
-table td {
-    border: 1px solid rgb(200,200,200);
-    padding: 2px 10px;
-}
-
 
 table td {
     border: 1px solid rgb(200,200,200);
