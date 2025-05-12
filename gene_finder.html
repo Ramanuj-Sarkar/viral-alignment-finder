@@ -24,26 +24,36 @@
 <h2>Available Genes</h2>
 <form name="gene_choice" id="gene_choice" action="">
 
+	<p>
+		Click on the check box to search using that gene. Click on the gene name itself to be linked to an external resource.
+	</p>
 	<div>
-	<input type="checkbox" id="sequence0" name="sequence0" value="on"><label for="sequence0">Human coronavirus OC43</label>
+		<input type="checkbox" id="sequence0" name="sequence0" value="on">
+		<label for="sequence0"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003972325.1/">Human coronavirus OC43</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence1" name="sequence1" value="on"><label for="sequence1">Human coronavirus HKU1</label>
+		<input type="checkbox" id="sequence1" name="sequence1" value="on">
+		<label for="sequence1"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000858765.1/">Human coronavirus HKU1</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence2" name="sequence2" value="on"><label for="sequence2">Human coronavirus 229E</label>
+		<input type="checkbox" id="sequence2" name="sequence2" value="on">
+		<label for="sequence2"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000853505.1/">Human coronavirus 229E</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence3" name="sequence3" value="on"><label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label>
+		<input type="checkbox" id="sequence3" name="sequence3" value="on">
+		<label for="sequence3"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011537615.1/">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence4" name="sequence4" value="on"><label for="sequence4">Human betacoronavirus 2c</label>
+		<input type="checkbox" id="sequence4" name="sequence4" value="on">
+		<label for="sequence4"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031154475.1/">Human betacoronavirus 2c</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence5" name="sequence5" value="on"><label for="sequence5">Human enteric coronavirus 4408</label>
+		<input type="checkbox" id="sequence5" name="sequence5" value="on">
+		<label for="sequence5"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031116475.1/">Human enteric coronavirus 4408</a></label>
 	</div>
 	<div>
-	<input type="checkbox" id="sequence6" name="sequence6" value="on"><label for="sequence6">Sarbecovirus RhGB01</label>
+		<input type="checkbox" id="sequence6" name="sequence6" value="on">
+		<label for="sequence6"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031243065.1/">Sarbecovirus RhGB01</a></label>
 	</div>
 	<div>
 	<input name="submit" type="submit" id="submit" value="submit">
@@ -58,27 +68,36 @@
 <form name="column_choice" id="column_choice" action="">
 
 	<p>
-	<input type="checkbox" id="column0" name="column0" value="on" checked><label for="column0">Organism Name</label>
+		<input type="checkbox" id="column0" name="column0" value="on" checked><label for="column0">Organism Name</label>
 	</p>
 	<p>
 	<div>
-	<input type="checkbox" id="column1" name="column1" value="on"><label for="column0">Gene Name</label>
+		The "Gene Name" box must be checked in order to filter by partial matching using the "Gene Search Term" bar.
 	</div>
 	<div>
-	<input name="gene_search_term" id="gene_search_term" type="search" size="64" maxlength="64" value="" autofocus="autofocus" placeholder="Enter part of a gene name or the whole gene name.."/>
-	<label for="gene_search_term">Gene Search Term</label>
+		<input type="checkbox" id="column1" name="column1" value="on">
+		<label for="column0">Gene Name</label>
+	</div>
+	<div>
+		<input name="gene_search_term" id="gene_search_term" type="search" size="64" maxlength="64" value="" autofocus="autofocus" placeholder="Enter part of a gene name or the whole gene name.."/>
+		<label for="gene_search_term">Gene Search Term</label>
 	</div>
 	</p>
 	<p>
 	<div>
-	<input type="checkbox" id="column2" name="column2" value="on"><label for="column2">Product Name</label>
+		At least one of the "Product Name" or "Product Length" boxes must be checked in order to filter by partial matching using the "Product Search Term" bar.
 	</div>
 	<div>
-	<input type="checkbox" id="column3" name="column3" value="on"><label for="column1">Product Length</label>
+		<input type="checkbox" id="column2" name="column2" value="on">
+		<label for="column2">Product Name</label>
 	</div>
 	<div>
-	<input name="product_search_term" id="product_search_term" type="search" size="64" maxlength="64" value="" autofocus="autofocus" placeholder="Enter part of a product name or the entire product name."/>
-	<label for="product_search_term">Product Search Term</label>
+		<input type="checkbox" id="column3" name="column3" value="on">
+		<label for="column1">Product Length</label>
+	</div>
+	<div>
+		<input name="product_search_term" id="product_search_term" type="search" size="64" maxlength="64" value="" autofocus="autofocus" placeholder="Enter part of a product name or the entire product name."/>
+		<label for="product_search_term">Product Search Term</label>
 	</div>
 	</p>
 
@@ -102,6 +121,11 @@
 
 
 </table>
+
+
+<p>
+You can use the "Product Names" column to search using the <a href="http://bfx3.aap.jhu.edu/rsarkar6/final/alignment_finder.html">Human Coronavirus Alignment Finder</a>.
+</p>
 
 </section>
 
