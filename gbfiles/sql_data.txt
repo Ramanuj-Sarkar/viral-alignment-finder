@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS rsarkar6;
+
 USE rsarkar6;
 
 DROP TABLE IF EXISTS source;
