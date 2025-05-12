@@ -20,69 +20,100 @@
 
 <h1>Human Coronavirus Alignment Finder</h1>
 
+<p>
+The product names used for each gene can be found using the "Product Name" column of the <a href="http://bfx3.aap.jhu.edu/rsarkar6/final/gene_finder.html">Human Coronavirus Gene Finder</a>.
+</p>
+
+
 <form name="alignment_data" id="alignment_data" action="">
 
 	<h2>First Product</h2>
+	
+	<p>
+		Click on the button to search using that gene. Click on the gene name itself to be linked to an external resource.
+	</p>
+
 	<div>
-	<input type="radio" id="sequence0" name="first_radio" value="sequence0"><label for="sequence0">Human coronavirus OC43</label>
+		<input type="radio" id="sequence0" name="first_radio" value="sequence0">
+		<label for="sequence0"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_003972325.1/">Human coronavirus OC43</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence1" name="first_radio" value="sequence1"><label for="sequence1">Human coronavirus HKU1</label>
+		<input type="radio" id="sequence1" name="first_radio" value="sequence1">
+		<label for="sequence1"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000858765.1/">Human coronavirus HKU1</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence2" name="first_radio" value="sequence2"><label for="sequence2">Human coronavirus 229E</label>
+		<input type="radio" id="sequence2" name="first_radio" value="sequence2">
+		<label for="sequence2"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCF_000853505.1/">Human coronavirus 229E</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence3" name="first_radio" value="sequence3"><label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label>
+		<input type="radio" id="sequence3" name="first_radio" value="sequence3">
+		<label for="sequence3"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_011537615.1/">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence4" name="first_radio" value="sequence4"><label for="sequence4">Human betacoronavirus 2c</label>
+		<input type="radio" id="sequence4" name="first_radio" value="sequence4">
+		<label for="sequence4"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031154475.1/">Human betacoronavirus 2c</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence5" name="first_radio" value="sequence5"><label for="sequence5">Human enteric coronavirus 4408</label>
+		<input type="radio" id="sequence5" name="first_radio" value="sequence5">
+		<label for="sequence5"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031116475.1/">Human enteric coronavirus 4408</a></label>
 	</div>
 	<div>
-	<input type="radio" id="sequence6" name="first_radio" value="sequence6"><label for="sequence6">Sarbecovirus RhGB01</label>
+		<input type="radio" id="sequence6" name="first_radio" value="sequence6">
+		<label for="sequence6"><a href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_031243065.1/">Sarbecovirus RhGB01</a></label>
 	</div>
 	
 	<p>
-	<input name="first_product" id="first_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
-	<label for="first_product">First Product</label>
+		<input name="first_product" id="first_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
+		<label for="first_product">First Product</label>
 	</p>
 
 	<h2>Second Product</h2>
+	
+	<p>
+		The genes here are exactly the same as those above, so they don't have links.
+	</p>
+
 	<div>
-	<input type="radio" id="sequence0" name="second_radio" value="sequence0"><label for="sequence0">Human coronavirus OC43</label>
+		<input type="radio" id="sequence0" name="second_radio" value="sequence0">
+		<label for="sequence0">Human coronavirus OC43</label>
 	</div>
 	<div>
-        <input type="radio" id="sequence1" name="second_radio" value="sequence1"><label for="sequence1">Human coronavirus HKU1</label>
+        	<input type="radio" id="sequence1" name="second_radio" value="sequence1">
+		<label for="sequence1">Human coronavirus HKU1</label>
 	</div>
 	<div>
-	<input type="radio" id="sequence2" name="second_radio" value="sequence2"><label for="sequence2">Human coronavirus 229E</label>
+		<input type="radio" id="sequence2" name="second_radio" value="sequence2">
+		<label for="sequence2">Human coronavirus 229E</label>
 	</div>
 	<div>
-	<input type="radio" id="sequence3" name="second_radio" value="sequence3"><label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label>
+		<input type="radio" id="sequence3" name="second_radio" value="sequence3">
+		<label for="sequence3">Severe acute respiratory syndrome coronavirus 2 (COVID-19)</label>
 	</div>
 	<div>
-	<input type="radio" id="sequence4" name="second_radio" value="sequence4"><label for="sequence4">Human betacoronavirus 2c</label>
+		<input type="radio" id="sequence4" name="second_radio" value="sequence4">
+		<label for="sequence4">Human betacoronavirus 2c</label>
 	</div>
 	<div>
-	<input type="radio" id="sequence5" name="second_radio" value="sequence5"><label for="sequence5">Human enteric coronavirus 4408</label>
+		<input type="radio" id="sequence5" name="second_radio" value="sequence5">
+		<label for="sequence5">Human enteric coronavirus 4408</label>
 	</div>
 	<div>
-	<input type="radio" id="sequence6" name="second_radio" value="sequence6"><label for="sequence6">Sarbecovirus RhGB01</label>
+		<input type="radio" id="sequence6" name="second_radio" value="sequence6">
+		<label for="sequence6">Sarbecovirus RhGB01</label>
 	</div>
 
 	<p>
-	<input name="second_product" id="second_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
-	<label for="second_product">Second Product</label>
+		<input name="second_product" id="second_product" size=50 maxlength=64 type="search" value="" autofocus="autofocus" placeholder="Enter the entire name of the product."/>
+		<label for="second_product">Second Product</label>
 	</p>
 </form>
 
-<input name="submit_alignment" type="submit" id="submit_alignment" value="submit">
+<p>
+	<input name="submit_alignment" type="submit" id="submit_alignment" value="submit">
+</p>
 
 <section id="alignment_results">
-	<p>The number of alignments found was: <span id="alignment_count"> <!-- will be filled in by javascript --> </span></p>
+	<p>The number of alignments found was: <span id="alignment_count"></span></p>
 	<p>The alignment score was: <span id="alignment_score"></span></p>
 	<p>The matches, mismatches, and empty space in the top alignment sum up to: <span id="alignment"></span></p>
 </section>
